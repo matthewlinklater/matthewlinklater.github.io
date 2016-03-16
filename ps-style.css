@@ -1,0 +1,67 @@
+
+/*
+ 	
+ 	Cascading Style Sheet 
+	In conjunction with ps-soda.com 
+
+	modified by Matthew Linklater
+
+*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#site_bracket img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#site_bracket {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+#ps_landscape {
+	width: 50%;
+	height: 100%;
+	background-color: #000000;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+#ps40_landscape {
+	width: 50%;
+	height: 100%;
+	background-color: #fefafb;
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+
+#ps_portrait {
+	width: 100%;
+	height: 50%;
+	background-color: #000000;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#ps40_portrait {
+	width: 100%;
+	height: 50%;
+	background-color: #ffffff;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;	
+}
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+
+		www.ps-soda.com
+
+		PROPERTY OF P.S SODA
+
+		EDITED BY MATTHEW LINKLATER
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>P.S.</title>
+		<link rel="stylesheet" href="ps-style.css">
+		<script src="http://code.jquery.com/jquery-latest.js"></script> 			
+
+	</head>
+
+	<body>
+		
+		<div id="site_bracket">		
+		
+			<!-- images tailored to landscape form for desktop / mobile -->
+				
+			<!-- ps images lhs -->
+			<div id="ps_landscape">
+				<img id="psls" 
+				onclick="pslsChange()" onmouseover="pslsHover()" onmouseout="pslsNormal()" 
+				src="ps_1.jpg" border="0" />
+				<script>
+					function pslsHover() {
+						var image = document.getElementById('psls');
+						if (image.src.match("ps_1")) {
+							image.src = "ps_1_hover.jpg";
+						}
+					}			
+					function pslsNormal() {
+						var image = document.getElementById('psls');
+						if (image.src.match("ps_1_hover")) {
+							image.src = "ps_1.jpg";
+						}
+					}		
+					function pslsChange() {
+						var image = document.getElementById('psls');
+						if (image.src.match("ps_1")) {
+							image.src = "ps_2.jpg";
+						} else if (image.src.match("ps_2")) {
+							image.src = "ps_3.jpg";
+						} else {
+							image.src = "ps_1_hover.jpg";
+						}
+					}
+				</script>		
+			</div>
+			
+			<!-- ps40 images rhs -->			
+			<div id="ps40_landscape">
+				
+				<img id="ps40ls" src="ps40_1.jpg" width="100%" height="100%" border="0" />		
+				
+				<!-- TO INCORPORATE WHEN PS40 LIVE
+				
+				<img id="ps40ls"
+				onclick="ps40lsChange()" onmouseover="ps40lsHover()" onmouseout="ps40lsNormal()" 
+				src="ps40_1.jpg" width="100%" height="100%" border="0" />
+				<script>
+					function ps40lsHover() {
+						var image = document.getElementById('ps40ls');
+						if (image.src.match("ps40_1")) {
+							image.src = "ps40_1_hover.jpg";
+						}
+					}			
+					function ps40lsNormal() {
+						var image = document.getElementById('ps40ls');
+						if (image.src.match("ps40_1_hover")) {
+							image.src = "ps40_1.jpg";
+						}
+					}		
+					function ps40lsChange() {
+						var image = document.getElementById('ps40ls');
+						if (image.src.match("ps40_1")) {
+							image.src = "ps40_2.jpg";
+						} else if (image.src.match("ps40_2")) {
+							image.src = "ps40_3.jpg";
+						} else {
+							image.src = "ps40_1_hover.jpg";
+						}
+					}					
+				</script>	
+				
+				-->
+				
+			</div>
+
+			<!-- images tailored to portrait form for desktop / mobile -->
+			
+			<!-- ps images top -->
+			<div id="ps_portrait">
+							
+				<img id="psp" 
+				onclick="pspChange()" onmouseover="pspHover()" onmouseout="pspNormal()" 
+				src="psp_1.jpg" border="0" />
+				<script>
+					function pspHover() {
+						var image = document.getElementById('psp');
+						if (image.src.match("psp_1")) {
+							image.src = "psp_1_hover.jpg";
+						}
+					}			
+					function pspNormal() {
+						var image = document.getElementById('psp');
+						if (image.src.match("psp_1_hover")) {
+							image.src = "psp_1.jpg";
+						}
+					}		
+					function pspChange() {
+						var image = document.getElementById('psp');
+						if (image.src.match("psp_1")) {
+							image.src = "psp_2.jpg";
+						} else if (image.src.match("psp_2")) {
+							image.src = "psp_3.jpg";
+						} else {
+							image.src = "psp_1_hover.jpg";
+						}
+					}
+				</script>	
+								
+			</div>
+			
+			<!-- ps40 images bottom -->
+			<div id="ps40_portrait">
+
+				<img id="ps40p" src="ps40p_1.jpg" width="100%" height="100%" border="0" />
+				
+				<!-- TO INCORPORATE WHEN PS40 LIVE
+
+				<img id="ps40p" 
+				onclick="ps40pChange()" onmouseover="ps40pHover()" onmouseout="ps40pNormal()" 
+				src="ps40_1.jpg" width="100%" height="100%" border="0" />
+				<script>
+					function ps40pHover() {
+						var image = document.getElementById('ps40p');
+						if (image.src.match("ps40_1")) {
+							image.src = "ps40_1_hover.jpg";
+						}
+					}			
+					function ps40pNormal() {
+						var image = document.getElementById('ps40p');
+						if (image.src.match("ps40_1_hover")) {
+							image.src = "ps40_1.jpg";
+						}
+					}		
+					function ps40pChange() {
+						var image = document.getElementById('ps40p');
+						if (image.src.match("ps40_1")) {
+							image.src = "ps40_2.jpg";
+						} else if (image.src.match("ps40_2")) {
+							image.src = "ps40_3.jpg";
+						} else {
+							image.src = "ps40_1_hover.jpg";
+						}
+					}					
+				</script>	
+				
+				-->
+				
+			</div>		
+		</div>
+		
+		<script type="text/javascript" charset="utf-8">
+			// Detect dimensions of browser size and adjust images to scale
+			function jsUpdateSize(){
+				
+				// Get the dimensions of the viewport
+				var width = window.innerWidth ||
+							document.documentElement.clientWidth ||
+							document.body.clientWidth;
+				var height = window.innerHeight ||
+							 document.documentElement.clientHeight ||
+							 document.body.clientHeight;
+		
+				// references to doc divs
+				var ps_ls = document.getElementById('psls');
+				var ps40_ls = document.getElementById('ps40ls');	
+				var ps_p = document.getElementById('psp');
+				var ps40_p = document.getElementById('ps40p');					
+				
+				var ps_landscape = document.getElementById('ps_landscape');
+				var ps40_landscape = document.getElementById('ps40_landscape');
+				var ps_portrait = document.getElementById('ps_portrait');
+				var ps40_portrait = document.getElementById('ps40_portrait');				
+							 
+				// detect whether landscape or portrait required
+				var landscape_ratio = (2*ps_ls.width)/ps_ls.height;
+				var portrait_ratio = ps_ls.width/(2*ps_ls.height);
+				var mean_ratio = (landscape_ratio+portrait_ratio)/2;
+				var window_ratio = width/height;
+				
+				if (window_ratio > mean_ratio) {
+					
+					// landscape mode
+					
+					// display landscape
+					ps_landscape.style.display = 'block';
+					ps40_landscape.style.display = 'block';		
+					ps_portrait.style.display = 'none';
+					ps40_portrait.style.display = 'none';	
+					
+					width = width/2;					
+					
+					// ratios to determine how to alter image
+					var brows_ratio = width/height;
+					var img_ratio = ps_ls.width/ps_ls.height;
+					
+					if (brows_ratio < img_ratio) {
+						ps_ls.style.width = '100%';
+						ps_ls.style.height = 'auto';
+						ps40_ls.style.width = '100%';
+						ps40_ls.style.height = 'auto';
+					} else {
+						ps_ls.style.height = '100%';
+						ps_ls.style.width = 'auto';
+						ps40_ls.style.height = '100%';
+						ps40_ls.style.width = 'auto';					
+					}					
+								
+				} else {
+					
+					// portrait mode
+
+					// display portrait
+					ps_landscape.style.display = 'none';
+					ps40_landscape.style.display = 'none';
+					ps_portrait.style.display = 'block';
+					ps40_portrait.style.display = 'block';						
+					
+					height = height/2;					
+					
+					// ratios to determine how to alter image
+					var brows_ratio = width/height;
+					var img_ratio = ps_p.width/ps_p.height;
+					
+					if (brows_ratio < img_ratio) {
+						ps_p.style.width = '100%';
+						ps_p.style.height = 'auto';
+						ps40_p.style.width = '100%';
+						ps40_p.style.height = 'auto';
+					} else {
+						ps_p.style.height = '100%';
+						ps_p.style.width = 'auto';
+						ps40_p.style.height = '100%';
+						ps40_p.style.width = 'auto';					
+					}						
+					
+					
+				}			
+					
+			};
+			window.onload = jsUpdateSize;       // When the page first loads
+			window.onresize = jsUpdateSize;     // When the browser changes size
+		</script>		
+	</body>
+</html>
