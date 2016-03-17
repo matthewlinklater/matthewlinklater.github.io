@@ -188,7 +188,7 @@
 				var ps_ls = document.getElementById('psls');
 				var ps40_ls = document.getElementById('ps40ls');	
 				var ps_p = document.getElementById('psp');
-				var ps40_p = document.getElementById('ps40p');					
+				var ps40_p = document.getElementById('ps40p');		
 				
 				var ps_landscape = document.getElementById('ps_landscape');
 				var ps40_landscape = document.getElementById('ps40_landscape');
@@ -227,7 +227,10 @@
 						ps_ls.style.width = 'auto';
 						ps40_ls.style.height = '100%';
 						ps40_ls.style.width = 'auto';					
-					}					
+					}		
+					
+					// reset portrait image to start
+					ps_p.src = "psp_1.jpg";										
 								
 				} else {
 					
@@ -255,14 +258,28 @@
 						ps_p.style.width = 'auto';
 						ps40_p.style.height = '100%';
 						ps40_p.style.width = 'auto';					
-					}						
+					}		
 					
+									
+					// reset landscape image to start
+					ps_ls.src = "ps_1.jpg";
 					
+					/*
+					// maintain img continuity
+					if (ps_ls.src.match("ps_1")) {
+						ps_p.src = "psp_1.jpg";
+					} else if (ps_p.src.match("ps_2") {
+						ps_p.src = "psp_2.jpg";
+					} else {
+						ps_p.src = "psp_3.jpg";
+					}	
+					*/					
 				}			
 					
 			};
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
+			
 			window.orientation = jsUpdateSize;	// When the orientation changes
 			
 		</script>		
