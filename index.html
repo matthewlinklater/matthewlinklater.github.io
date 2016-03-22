@@ -31,28 +31,28 @@
 			<div id="ps_landscape">
 				<img id="psls" 
 				onclick="pslsChange()" onmouseover="pslsHover()" onmouseout="pslsNormal()" 
-				src="ps_1.jpg" border="0" />
+				src="images/ps_1.jpg" border="0" />
 				<script>
 					function pslsHover() {
 						var image = document.getElementById('psls');
 						if (image.src.match("ps_1")) {
-							image.src = "ps_1_hover.jpg";
+							image.src = "images/ps_1_hover.jpg";
 						}
 					}			
 					function pslsNormal() {
 						var image = document.getElementById('psls');
 						if (image.src.match("ps_1_hover")) {
-							image.src = "ps_1.jpg";
+							image.src = "images/ps_1.jpg";
 						}
 					}		
 					function pslsChange() {
 						var image = document.getElementById('psls');
 						if (image.src.match("ps_1")) {
-							image.src = "ps_2.jpg";
+							image.src = "images/ps_2.jpg";
 						} else if (image.src.match("ps_2")) {
-							image.src = "ps_3.jpg";
+							image.src = "images/ps_3.jpg";
 						} else {
-							image.src = "ps_1_hover.jpg";
+							image.src = "images/ps_1_hover.jpg";
 						}
 					}
 				</script>		
@@ -61,7 +61,7 @@
 			<!-- ps40 images rhs -->			
 			<div id="ps40_landscape">
 				
-				<img id="ps40ls" src="ps40_1.jpg" width="100%" height="100%" border="0" />		
+				<img id="ps40ls" src="images/ps40_1.jpg" width="100%" height="100%" border="0" />		
 				
 				<!-- TO INCORPORATE WHEN PS40 LIVE
 				
@@ -104,28 +104,28 @@
 							
 				<img id="psp" 
 				onclick="pspChange()" onmouseover="pspHover()" onmouseout="pspNormal()" 
-				src="psp_1.jpg" border="0" />
+				src="images/psp_1.jpg" border="0" />
 				<script>
 					function pspHover() {
 						var image = document.getElementById('psp');
 						if (image.src.match("psp_1")) {
-							image.src = "psp_1_hover.jpg";
+							image.src = "images/psp_1_hover.jpg";
 						}
 					}			
 					function pspNormal() {
 						var image = document.getElementById('psp');
 						if (image.src.match("psp_1_hover")) {
-							image.src = "psp_1.jpg";
+							image.src = "images/psp_1.jpg";
 						}
 					}		
 					function pspChange() {
 						var image = document.getElementById('psp');
 						if (image.src.match("psp_1")) {
-							image.src = "psp_2.jpg";
+							image.src = "images/psp_2.jpg";
 						} else if (image.src.match("psp_2")) {
-							image.src = "psp_3.jpg";
+							image.src = "images/psp_3.jpg";
 						} else {
-							image.src = "psp_1_hover.jpg";
+							image.src = "images/psp_1_hover.jpg";
 						}
 					}
 				</script>	
@@ -135,7 +135,7 @@
 			<!-- ps40 images bottom -->
 			<div id="ps40_portrait">
 
-				<img id="ps40p" src="ps40p_1.jpg" width="100%" height="100%" border="0" />
+				<img id="ps40p" src="images/ps40p_1.jpg" width="100%" height="100%" border="0" />
 				
 				<!-- TO INCORPORATE WHEN PS40 LIVE
 
@@ -230,7 +230,7 @@
 					}		
 					
 					// reset portrait image to start
-					ps_p.src = "psp_1.jpg";										
+					ps_p.src = "images/psp_1.jpg";										
 								
 				} else {
 					
@@ -259,10 +259,9 @@
 						ps40_p.style.height = '100%';
 						ps40_p.style.width = 'auto';					
 					}		
-					
-									
+						
 					// reset landscape image to start
-					ps_ls.src = "ps_1.jpg";
+					ps_ls.src = "images/ps_1.jpg";
 									
 				}			
 					
@@ -270,7 +269,7 @@
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 			
-			window.orientation = jsUpdateSize;	// When the orientation changes
+			//window.orientation = jsUpdateSize;	// When the orientation changes
 			
 		</script>		
 	</body>
