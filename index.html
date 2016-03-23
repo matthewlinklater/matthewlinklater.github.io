@@ -17,8 +17,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>P.S.</title>
 		<link rel="stylesheet" href="ps-style.css">
-		<script src="http://code.jquery.com/jquery-latest.js"></script> 			
-
+		<script src="http://code.jquery.com/jquery-latest.js"></script> 
+		<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+		
 	</head>
 
 	<body>
@@ -266,11 +267,18 @@
 				}			
 					
 			};
+			
+
+			
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 			
 			// for mobile browsers
+			//window.addEventListener('orientationchange', jsUpdateSize);
 			//window.onorientationchange = jsUpdateSize;	// When the orientation changes
+			
+			$(window).on("orientationchange",jsUpdateSize);
+			
 			
 		</script>		
 	</body>
