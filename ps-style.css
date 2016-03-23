@@ -25,6 +25,7 @@
 	height: 100vh;
 	width: 100vw;
 	position: relative;
+	background-image: url("images/ps_background.jpg");	
 }
 
 #ps_landscape {
@@ -34,6 +35,7 @@
 	float: left;
 	overflow: hidden;
 	position: relative;
+	display: none;	
 }
 
 #ps40_landscape {
@@ -43,6 +45,7 @@
 	float: right;
 	overflow: hidden;
 	position: relative;
+	display: none;	
 }
 
 #ps_portrait {
@@ -53,6 +56,7 @@
 	left: 0px;
 	position: absolute;
 	overflow: hidden;
+	display: none;
 }
 
 #ps40_portrait {
@@ -63,5 +67,6 @@
 	left: 0px;
 	position: absolute;
 	overflow: hidden;	
+	display: none;
 }
 

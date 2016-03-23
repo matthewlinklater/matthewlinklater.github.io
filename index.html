@@ -182,8 +182,8 @@
 							document.body.clientWidth;
 				var height = window.innerHeight ||
 							 document.documentElement.clientHeight ||
-							 document.body.clientHeight;
-		
+							 document.body.clientHeight;		
+
 				// references to doc divs
 				var ps_ls = document.getElementById('psls');
 				var ps40_ls = document.getElementById('ps40ls');	
@@ -269,7 +269,8 @@
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 			
-			//window.orientation = jsUpdateSize;	// When the orientation changes
+			// for mobile browsers
+			//window.onorientationchange = jsUpdateSize;	// When the orientation changes
 			
 		</script>		
 	</body>
