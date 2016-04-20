@@ -15,11 +15,10 @@
 	<head>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>P.S.</title>
+		<title>pop soda</title>
 		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />		
 		<link rel="stylesheet" href="ps-style.css">
 		<script src="http://code.jquery.com/jquery-latest.js"></script> 
-		<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 		
 	</head>
 
@@ -33,28 +32,32 @@
 			<div id="ps_landscape">
 				<img id="psls" 
 				onclick="pslsChange()" onmouseover="pslsHover()" onmouseout="pslsNormal()" 
-				src="images/ps_1.jpg" border="0" />
+				src="images/ps_0.gif" border="0" />
 				<script>
 					function pslsHover() {
 						var image = document.getElementById('psls');
-						if (image.src.match("ps_1")) {
-							image.src = "images/ps_1_hover.jpg";
+						if (image.src.match("ps_0")) {
+							image.src = "images/ps_2.jpg";
 						}
 					}			
 					function pslsNormal() {
 						var image = document.getElementById('psls');
-						if (image.src.match("ps_1_hover")) {
-							image.src = "images/ps_1.jpg";
+						if (image.src.match("ps_1")) {
+							image.src = "images/ps_0.gif";
 						}
 					}		
 					function pslsChange() {
 						var image = document.getElementById('psls');
-						if (image.src.match("ps_1")) {
+						if (image.src.match("ps_0")) {
 							image.src = "images/ps_2.jpg";
 						} else if (image.src.match("ps_2")) {
 							image.src = "images/ps_3.jpg";
+						} else if (image.src.match("ps_3")) {
+							image.src = "images/ps_4.jpg";
+						} else if (image.src.match("ps_4")) {
+							image.src = "images/ps_5.jpg";
 						} else {
-							image.src = "images/ps_1_hover.jpg";
+							image.src = "images/ps_0.gif";
 						}
 					}
 				</script>		
@@ -62,40 +65,47 @@
 			
 			<!-- ps40 images rhs -->			
 			<div id="ps40_landscape">
+
+				<!-- 
+
+				STATIC IMAGE TO BE REMOVED WHEN PS40 LIVE
 				
-				<img id="ps40ls" src="images/ps40_1.jpg" width="100%" height="100%" border="0" />		
-				
-				<!-- TO INCORPORATE WHEN PS40 LIVE
-				
+				<img id="ps40ls" src="images/ps40_1.jpg" width="100%" height="100%" border="0" />	
+
+				-->	
+
 				<img id="ps40ls"
 				onclick="ps40lsChange()" onmouseover="ps40lsHover()" onmouseout="ps40lsNormal()" 
-				src="ps40_1.jpg" width="100%" height="100%" border="0" />
+				src="images/ps40_0.gif" width="100%" height="100%" border="0" />
 				<script>
 					function ps40lsHover() {
 						var image = document.getElementById('ps40ls');
-						if (image.src.match("ps40_1")) {
-							image.src = "ps40_1_hover.jpg";
+						if (image.src.match("ps40_0")) {
+							image.src = "images/ps40_2.jpg";
 						}
 					}			
 					function ps40lsNormal() {
 						var image = document.getElementById('ps40ls');
-						if (image.src.match("ps40_1_hover")) {
-							image.src = "ps40_1.jpg";
+						if (image.src.match("ps40_1")) {
+							image.src = "images/ps40_0.gif";
 						}
 					}		
 					function ps40lsChange() {
 						var image = document.getElementById('ps40ls');
-						if (image.src.match("ps40_1")) {
-							image.src = "ps40_2.jpg";
+						if (image.src.match("ps40_0")) {
+							image.src = "images/ps40_2.jpg";
 						} else if (image.src.match("ps40_2")) {
-							image.src = "ps40_3.jpg";
+							image.src = "images/ps40_3.jpg";
+						} else if (image.src.match("ps40_3")) {
+							image.src = "images/ps40_4.jpg";
+						} else if (image.src.match("ps40_4")) {
+							image.src = "images/ps40_5.jpg";
 						} else {
-							image.src = "ps40_1_hover.jpg";
+							image.src = "images/ps40_0.gif";
 						}
 					}					
 				</script>	
 				
-				-->
 				
 			</div>
 
@@ -137,9 +147,15 @@
 			<!-- ps40 images bottom -->
 			<div id="ps40_portrait">
 
+				<!-- 
+
+				STATIC IMAGE TO BE REMOVED WHEN PS40 LIVE -->
+
 				<img id="ps40p" src="images/ps40p_1.jpg" width="100%" height="100%" border="0" />
 				
-				<!-- TO INCORPORATE WHEN PS40 LIVE
+				<!-- 
+
+				TO INCORPORATE WHEN PS40 LIVE
 
 				<img id="ps40p" 
 				onclick="ps40pChange()" onmouseover="ps40pHover()" onmouseout="ps40pNormal()" 
@@ -186,12 +202,13 @@
 							 document.documentElement.clientHeight ||
 							 document.body.clientHeight;		
 
-				// references to doc divs
+				// references to images
 				var ps_ls = document.getElementById('psls');
 				var ps40_ls = document.getElementById('ps40ls');	
 				var ps_p = document.getElementById('psp');
 				var ps40_p = document.getElementById('ps40p');		
 				
+				// references to div containers
 				var ps_landscape = document.getElementById('ps_landscape');
 				var ps40_landscape = document.getElementById('ps40_landscape');
 				var ps_portrait = document.getElementById('ps_portrait');
@@ -266,20 +283,13 @@
 					ps_ls.src = "images/ps_1.jpg";
 									
 				}			
-					
 			};
-			
-
 			
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 			
 			// for mobile browsers
-			//window.addEventListener('orientationchange', jsUpdateSize);
-			//window.onorientationchange = jsUpdateSize;	// When the orientation changes
-			
 			$(window).on("orientationchange",jsUpdateSize);
-			
 			
 		</script>		
 	</body>
