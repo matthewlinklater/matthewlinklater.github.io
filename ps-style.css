@@ -82,7 +82,7 @@ img {
 .menubtn {
     background-color: #000;
     font: Georgia, serif;
-    color: white;
+    color: #fff;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -114,7 +114,10 @@ img {
 }
 
 /* Change color of dropdown links on hover */
-.menu-content a:hover {background-color: #f1f1f1}
+.menu-content a:hover {
+	color: #000;
+	background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .menu:hover .menu-content {
