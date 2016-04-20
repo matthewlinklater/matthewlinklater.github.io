@@ -31,9 +31,21 @@
 			<!-- ps images lhs -->
 			<div id="ps_landscape">
 				<img id="psls" 
-				onclick="pslsChange()" 
-				src="images/ps_1.gif" border="0" />
-				<script>	
+				onclick="pslsChange()" onmouseover="pslsHover()" onmouseout="pslsNormal()"
+				src="images/ps_1.jpg" border="0" />
+				<script>
+					function pslsHover() {
+						var image = document.getElementById('psls');
+						if (image.src.match("ps_1")) {
+							image.src = "images/ps_1_hover.jpg";
+						}
+					}			
+					function pslsNormal() {
+						var image = document.getElementById('psls');
+						if (image.src.match("ps_1")) {
+							image.src = "images/ps_1.jpg";
+						}
+					}		
 					function pslsChange() {
 						var image = document.getElementById('psls');
 						if (image.src.match("ps_1")) {
@@ -44,19 +56,33 @@
 							image.src = "images/ps_4.jpg";
 						} else if (image.src.match("ps_4")) {
 							image.src = "images/ps_5.jpg";
+						} else if (image.src.match("ps_5")) {
+							image.src = "images/ps_6.jpg";
 						} else {
-							image.src = "images/ps_1.gif";
+							image.src = "images/ps_1.jpg";
 						}
 					}
 				</script>		
 			</div>
 			
 			<!-- ps40 images rhs -->			
-			<div id="ps40_landscape">
+			<div id="ps40_landscape" onclick="ps40lsChange()" >
 				<img id="ps40ls"
-				onclick="ps40lsChange()"
-				src="images/ps40_1.gif" width="100%" height="100%" border="0" />
+				onclick="ps40lsChange()" onmouseover="ps40lsHover()" onmouseout="ps40lsNormal()" 
+				src="images/ps40_1.jpg" width="100%" height="100%" border="0" />
 				<script>
+					function ps40lsHover() {
+						var image = document.getElementById('ps40ls');
+						if (image.src.match("ps40_1")) {
+							image.src = "images/ps40_1_hover.jpg";
+						}
+					}			
+					function ps40lsNormal() {
+						var image = document.getElementById('ps40ls');
+						if (image.src.match("ps40_1")) {
+							image.src = "images/ps40_1.jpg";
+						}
+					}		
 					function ps40lsChange() {
 						var image = document.getElementById('ps40ls');
 						if (image.src.match("ps40_1")) {
@@ -68,10 +94,10 @@
 						} else if (image.src.match("ps40_4")) {
 							image.src = "images/ps40_5.jpg";
 						} else {
-							image.src = "images/ps40_1.gif";
+							image.src = "images/ps40_1.jpg";
 						}
-					}					
-				</script>	
+					}	
+				</script>
 			</div>
 
 			<!-- images tailored to portrait form for desktop / mobile -->
@@ -101,6 +127,14 @@
 							image.src = "images/psp_2.jpg";
 						} else if (image.src.match("psp_2")) {
 							image.src = "images/psp_3.jpg";
+						} else if (image.src.match("psp_3")) {
+							image.src = "images/psp_4.jpg";
+						} else if (image.src.match("psp_4")) {
+							image.src = "images/psp_5.jpg";
+						} else if (image.src.match("psp_5")) {
+							image.src = "images/psp_6.jpg";
+						} else if (image.src.match("psp_6")) {
+							image.src = "images/psp_7.jpg";
 						} else {
 							image.src = "images/psp_1_hover.jpg";
 						}
@@ -112,46 +146,40 @@
 			<!-- ps40 images bottom -->
 			<div id="ps40_portrait">
 
-				<!-- 
-
-				STATIC IMAGE TO BE REMOVED WHEN PS40 LIVE -->
-
-				<img id="ps40p" src="images/ps40p_1.jpg" width="100%" height="100%" border="0" />
-				
-				<!-- 
-
-				TO INCORPORATE WHEN PS40 LIVE
-
 				<img id="ps40p" 
 				onclick="ps40pChange()" onmouseover="ps40pHover()" onmouseout="ps40pNormal()" 
-				src="ps40_1.jpg" width="100%" height="100%" border="0" />
+				src="images/ps40p_1.jpg" width="100%" height="100%" border="0" />
 				<script>
 					function ps40pHover() {
 						var image = document.getElementById('ps40p');
-						if (image.src.match("ps40_1")) {
-							image.src = "ps40_1_hover.jpg";
+						if (image.src.match("ps40p_1")) {
+							image.src = "images/ps40p_1_hover.jpg";
 						}
 					}			
 					function ps40pNormal() {
 						var image = document.getElementById('ps40p');
-						if (image.src.match("ps40_1_hover")) {
-							image.src = "ps40_1.jpg";
+						if (image.src.match("ps40p_1_hover")) {
+							image.src = "images/ps40p_1.jpg";
 						}
 					}		
 					function ps40pChange() {
 						var image = document.getElementById('ps40p');
-						if (image.src.match("ps40_1")) {
-							image.src = "ps40_2.jpg";
-						} else if (image.src.match("ps40_2")) {
-							image.src = "ps40_3.jpg";
+						if (image.src.match("ps40p_1")) {
+							image.src = "images/ps40p_2.jpg";
+						} else if (image.src.match("ps40p_2")) {
+							image.src = "images/ps40p_3.jpg";
+						} else if (image.src.match("ps40p_3")) {
+							image.src = "images/ps40p_4.jpg";
+						} else if (image.src.match("ps40p_4")) {
+							image.src = "images/ps40p_5.jpg";
+						} else if (image.src.match("ps40p_5")) {
+							image.src = "images/ps40p_6.jpg";
 						} else {
-							image.src = "ps40_1_hover.jpg";
+							image.src = "images/ps40p_1_hover.jpg";
 						}
 					}					
 				</script>	
-				
-				-->
-				
+								
 			</div>		
 		</div>
 		
@@ -215,6 +243,7 @@
 					
 					// reset portrait image to start
 					ps_p.src = "images/psp_1.jpg";										
+					ps40_p.src = "images/ps40p_1.jpg";										
 								
 				} else {
 					
@@ -245,8 +274,8 @@
 					}		
 						
 					// reset landscape image to start
-					ps_ls.src = "images/ps_1.gif";
-					ps40_ls.src = "images/ps40_1.gif";
+					ps_ls.src = "images/ps_1.jpg";
+					ps40_ls.src = "images/ps40_1.jpg";
 									
 				}			
 			};
