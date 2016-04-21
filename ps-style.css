@@ -80,10 +80,13 @@ img {
 
 /* Dropdown Button */
 .menubtn {
-    background-color: #000;
+    background-color: #fff;
     font: Georgia, serif;
-    color: #fff;
-    padding: 12px;
+    color: #999;
+    /*padding: 12px;*/
+    align: left;
+    padding-left: 50px;
+    padding-top: 50px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -91,9 +94,17 @@ img {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.menu {
+.menu_black {
     position: absolute;
     float: left;
+    /*display: inline-block;*/
+}
+
+.menu_white {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    /*float: right;*/
     /*display: inline-block;*/
 }
 
@@ -120,11 +131,23 @@ img {
 }
 
 /* Show the dropdown menu on hover */
-.menu:hover .menu-content {
+.menu_black:hover .menu-content {
     display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.menu:hover .menubtn {
+.menu_black:hover .menubtn {
+    background-color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.menu_white:hover .menu-content {
+    display: block;
+    bottom: 100%;
+    right: 20%;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.menu_white:hover .menubtn {
     background-color: #000;
 }
