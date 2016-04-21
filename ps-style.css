@@ -121,7 +121,8 @@ img {
 
 /* Links inside the dropdown */
 .menu-content a {
-	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-family: Futura, Arial, sans-serif;
+	font-weight: bold;
     color: #fff;
     padding: 7px 7px;
     text-decoration: none;
