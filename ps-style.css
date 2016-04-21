@@ -80,13 +80,11 @@ img {
 
 /* Dropdown Button */
 .menubtn {
-    background-color: #fff;
-    font: Georgia, serif;
-    color: #999;
+	color: #999;
     /*padding: 12px;*/
     align: left;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -116,18 +114,31 @@ img {
     min-width: 120px;
 }
 
+.menu_white .menu-content {
+	background-color: #fff;
+	text-align: right;
+}
+
 /* Links inside the dropdown */
 .menu-content a {
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
     color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
+
+.menu_white .menu-content a {
+	color: #000;
+}
+
+
 /* Change color of dropdown links on hover */
 .menu-content a:hover {
-	color: #000;
-	background-color: #f1f1f1
+	text-decoration: underline;	
+	/*color: #000;
+	background-color: #f1f1f1*/
 }
 
 /* Show the dropdown menu on hover */
@@ -144,7 +155,7 @@ img {
 .menu_white:hover .menu-content {
     display: block;
     bottom: 100%;
-    right: 20%;
+    right: 5%;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
