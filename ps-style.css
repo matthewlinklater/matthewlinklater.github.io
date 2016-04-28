@@ -109,9 +109,9 @@ img {
 .menu-content {
     display: none;
     position: absolute;
-	background-color : transparent;
     min-width: 120px;
     font-size: 16px;    
+	opacity: 0.8;    
 }
 
 .menu_white .menu-content {
@@ -120,7 +120,6 @@ img {
 	-moz-border-radius: 20px 0px 0px 20px; 
 	-webkit-border-radius: 20px 0px 0px 20px; 
 	text-align: right;
-	opacity: 0.8;
 }
 
 .menu_black .menu-content {
@@ -128,7 +127,6 @@ img {
 	border-radius: 0px 20px 20px 0px; 
 	-moz-border-radius: 0px 20px 20px 0px; 
 	-webkit-border-radius: 0px 20px 20px 0px; 
-	opacity: 0.8;	
 }
 
 /* Links inside the dropdown */
@@ -156,11 +154,6 @@ img {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.menu_black:hover .menubtn {
-    /*background-color: #000;*/
-}
-
 /* Show the dropdown menu on hover */
 .menu_white:hover .menu-content {
     display: block;
@@ -168,12 +161,7 @@ img {
     right: 5%;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.menu_white:hover .menubtn {
-    /*background-color: #000;*/
-}
-
-/* IPHONE AND HANDHELD MENU HACK */
+/* HANDHELD MENU */
 
 /* Portrait */
 @media only screen 
@@ -210,12 +198,12 @@ img {
 	    font-size: 28px;        
 	}
 	#menu_icon {
-		height: 70px;
-		width: 70px;
+		height: 60px;
+		width: 60px;
 	}
 	.menubtn {
-	    padding-left: 70px;
-	    padding-top: 70px;		
+	    padding-left: 60px;
+	    padding-top: 60px;		
 	}
 	.menu-content {
 		width: 200px;

@@ -306,25 +306,12 @@
 									
 				}			
 			};
-
-			function jsLargeMenu() {
-
-				var icon = document.getElementById('menu_icon');
-				var menu_text = document.getElementById('menu-content');
-
-				icon.style.height = '100px';
-				icon.style.width = '100px';
-
-				menu_text.style.fontSize = '100px';
-
-			};
-
 			
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
 			
 			// for mobile browsers
-			$(window).on("orientationchange",jsUpdateSize);
+			// $(window).on("orientationchange",jsUpdateSize);
 			
 		</script>		
 	</body>
