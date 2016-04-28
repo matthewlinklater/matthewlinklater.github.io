@@ -109,13 +109,13 @@ img {
 .menu-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    /*background-color: #000;*/
     min-width: 120px;
     font-size: 16px;        
 }
 
 .menu_white .menu-content {
-	background-color: #fff;
+	/*background-color: #fff;*/
 	text-align: right;
 }
 
@@ -182,7 +182,7 @@ img {
 	    padding-top: 100px;		
 	}
 	.menu-content {
-		width: 500px;
+		width: 450px;
 	}
 
 }
@@ -206,6 +206,6 @@ img {
 	    padding-top: 70px;		
 	}
 	.menu-content {
-		width: 500px;
+		width: 450px;
 	}
 }
