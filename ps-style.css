@@ -81,13 +81,17 @@ img {
 /* Dropdown Button */
 .menubtn {
 	color: #999;
-    /*padding: 12px;*/
     align: left;
     padding-left: 30px;
     padding-top: 30px;
     border: none;
     cursor: pointer;
     cursor: hand;
+}
+
+#menu_icon {
+	height: 30px;
+	width: 30px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -173,8 +177,17 @@ img {
   and (-webkit-min-device-pixel-ratio: 2) {
 
 	.menu-content {
-	    font-size: 50px;        
+	    font-size: 48px;        
 	}
 
+	#menu_icon {
+		height: 100px;
+		width: 100px;
+	}
+
+	.menubtn {
+	    padding-left: 30px;
+	    padding-top: 30px;		
+	}
 
 }
