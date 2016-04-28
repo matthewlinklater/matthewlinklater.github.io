@@ -169,7 +169,7 @@ img {
 }*/
 
 /* Portrait */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -190,10 +190,10 @@ img {
 		width: 300px;
 	}
 
-}
+}*/
 
 /* Landscape */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -208,9 +208,9 @@ img {
 	}
 	.menubtn {
 	    padding-left: 60px;
-	    padding-top: px;		
+	    padding-top: 60px;		
 	}
 	.menu-content {
 		width: 200px;
 	}
-}
+}*/
