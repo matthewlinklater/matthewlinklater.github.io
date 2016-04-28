@@ -146,7 +146,7 @@ img {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .menu_black:hover .menubtn {
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 /* Show the dropdown menu on hover */
@@ -158,7 +158,7 @@ img {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .menu_white:hover .menubtn {
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 /* IPHONE AND HANDHELD MENU HACK */
