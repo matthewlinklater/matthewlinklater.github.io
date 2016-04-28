@@ -120,6 +120,7 @@ img {
 	-moz-border-radius: 20px 0px 0px 20px; 
 	-webkit-border-radius: 20px 0px 0px 20px; 
 	text-align: right;
+	opacity: 0.8;
 }
 
 .menu_black .menu-content {
@@ -127,6 +128,7 @@ img {
 	border-radius: 0px 20px 20px 0px; 
 	-moz-border-radius: 0px 20px 20px 0px; 
 	-webkit-border-radius: 0px 20px 20px 0px; 
+	opacity: 0.8;	
 }
 
 /* Links inside the dropdown */
