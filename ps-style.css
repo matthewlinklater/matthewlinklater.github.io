@@ -85,7 +85,6 @@ img {
     align: left;
     padding-left: 30px;
     padding-top: 30px;
-    font-size: 16px;
     border: none;
     cursor: pointer;
     cursor: hand;
@@ -112,6 +111,7 @@ img {
     position: absolute;
     background-color: #000;
     min-width: 120px;
+    font-size: 16px;        
 }
 
 .menu_white .menu-content {

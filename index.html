@@ -25,21 +25,6 @@
 	<body>
 		
 		<div id="site_bracket">		
-
-
-
-
-<!--
-			<ul id="menu">
-				<li>More
-					<div>
-						<li><a href="mailto:info@ps-soda.com" target="_top">Contact Us</a></li>
-						<li>Drink Us</li>
-						<li><a href="https://goo.gl/maps/unEf71gQ6tt">Find Us</a></li>
-					</div>
-				</li>
-			</ul>
--->
 		
 			<!-- images tailored to landscape form for desktop / mobile -->
 				
@@ -203,9 +188,9 @@
 			<!-- ps -->
 			<div class="menu_black">
 				<button class="menubtn">
-				<img src="images/menu_black.jpg" width="30" height="30" alt="menu" />
+				<img id="menu_icon" src="images/menu_black.jpg" width="30" height="30" alt="menu" />
 				</button>
-				<div class="menu-content">
+				<div class="menu-content" id="menu-content">
 					<a href="mailto:info@ps-soda.com">Contact Us</a>
 					<a href="https://goo.gl/maps/unEf71gQ6tt" target="_blank">Find Us</a>
 				</div>
@@ -214,9 +199,9 @@
 			<!-- ps40 -->
 			<div class="menu_white">
 				<button class="menubtn">
-				<img src="images/menu_white.jpg" width="30" height="30" alt="menu" />
+				<img id="menu_icon" src="images/menu_white.jpg" width="30" height="30" alt="menu" />
 				</button>
-				<div class="menu-content">
+				<div class="menu-content" id="menu-content">
 					<a href="menu.pdf" target="_blank">Drink Us</a>
 					<a href="mailto:info@ps-soda.com">Contact Us</a>
 					<a href="https://goo.gl/maps/unEf71gQ6tt" target="_blank">Find Us</a>
@@ -321,6 +306,19 @@
 									
 				}			
 			};
+
+			function jsLargeMenu() {
+
+				var icon = document.getElementById('menu_icon');
+				var menu_text = document.getElementById('menu-content');
+
+				icon.style.height = '100px';
+				icon.style.width = '100px';
+
+				menu_text.style.fontSize = '100px';
+
+			};
+
 			
 			window.onload = jsUpdateSize;       // When the page first loads
 			window.onresize = jsUpdateSize;     // When the browser changes size
