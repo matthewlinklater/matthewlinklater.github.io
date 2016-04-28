@@ -112,12 +112,21 @@ img {
 	background-color : transparent;
     min-width: 120px;
     font-size: 16px;    
-    width: 700px;    
 }
 
 .menu_white .menu-content {
-	/*background-color: #fff;*/
+	background-color: #fff;
+	border-radius: 20px 0px 0px 20px; 
+	-moz-border-radius: 20px 0px 0px 20px; 
+	-webkit-border-radius: 20px 0px 0px 20px; 
 	text-align: right;
+}
+
+.menu_black .menu-content {
+	background-color: #000;
+	border-radius: 0px 20px 20px 0px; 
+	-moz-border-radius: 0px 20px 20px 0px; 
+	-webkit-border-radius: 0px 20px 20px 0px; 
 }
 
 /* Links inside the dropdown */
@@ -183,7 +192,7 @@ img {
 	    padding-top: 100px;		
 	}
 	.menu-content {
-		width: 450px;
+		width: 300px;
 	}
 
 }
@@ -207,6 +216,6 @@ img {
 	    padding-top: 70px;		
 	}
 	.menu-content {
-		width: 450px;
+		width: 200px;
 	}
 }
