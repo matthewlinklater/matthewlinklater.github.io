@@ -109,9 +109,10 @@ img {
 .menu-content {
     display: none;
     position: absolute;
-    /*background-color: #000;*/
+	background-color : transparent;
     min-width: 120px;
-    font-size: 16px;        
+    font-size: 16px;    
+    width: 700px;    
 }
 
 .menu_white .menu-content {
